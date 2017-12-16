@@ -11779,7 +11779,7 @@ div#notebook {
 <h1 id="CMSC320-FINAL-PROJECT">CMSC320 FINAL PROJECT<a class="anchor-link" href="#CMSC320-FINAL-PROJECT">&#182;</a></h1><h2 id="Metal-Bands-Around-The-World">Metal Bands Around The World<a class="anchor-link" href="#Metal-Bands-Around-The-World">&#182;</a></h2><h5>Name: Yan-Jen Lo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID: 114204813 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Due Date: 12/16/17 @ 1:30 PM</h5>
 <hr>
 <h3 id="INTERACTIVE-MENU:-\m/--(---_----)--\m/">INTERACTIVE MENU: \m/  (  -_-   )  \m/<a class="anchor-link" href="#INTERACTIVE-MENU:-\m/--(---_----)--\m/">&#182;</a></h3><ul style="list-style-type:none">
-    <li><Big><b>[Introduction](#Intro)</b></Big></li>
+    <li><Big><b><a href="#Intro">Introduction</a></b></Big></li>
     <li><Big><b>[Part I: Web Scrapping](#Part I)</b></Big></li>
     <li><Big><b>[Part II: Data Analysis & Visualization](#Part II)</b></Big></li>
     <li><Big><b>[Goal](#Goal)</b></Big></li>
@@ -11802,7 +11802,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Intro"></a></p>
+<p><a name="Intro">
+  <div id="Intro">
+  </div>
+</a></p>
 <h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><hr>
 <h3 id="Inspiration:-Kaggle's-Metal-by-Nation-and-Genre-Data">Inspiration: Kaggle's <a href="https://www.kaggle.com/mrpantherson/metal-by-nation/data">Metal by Nation and Genre</a> Data<a class="anchor-link" href="#Inspiration:-Kaggle's-Metal-by-Nation-and-Genre-Data">&#182;</a></h3><p>While looking around for a data set to use, I stumbled upon this kaggle entry on metal bands. Being a metal head since middle school, this peaked my interest like no other data set I've seen so far. After downloading the two data sets from
 <a href="https://www.kaggle.com/mrpantherson/metal-by-nation/downloads/metal-bands-by-nation.zip">here</a>:</p>
@@ -11820,13 +11823,13 @@ The dataset had only 5000 metal bands and the world population data didn't go up
   </tr>
   <tr>
     <td><b>Encyclopedia Metallum</b></td>
-    <td>[Metal-Archives](https://www.metal-archives.com)</td>
+    <td><a href="https://www.metal-archives.com">Metal-Archives</a></td>
     <td>119474 Bands</td>
     <td>12/5/17</td>
   </tr>
   <tr>
     <td><b>Wikipedia</b></td>
-    <td>[2017 Population Data](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population)</td>
+    <td><a href="https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population2017">Population Data</a></td>
     <td>240 Countries</td>
     <td>12/15/17</td>
   </tr>
@@ -11844,7 +11847,7 @@ small bands can put themselves into the databse. Instead of using the kaggle dat
 archives myself since I felt that 5000 bands was lacking in terms of analysis for the entire world. For population data, 
 I opted for <b>Wikipedia</b> since most of their population information was based on a real time 
 <a href="http://worldpopulationclock.info">world population clock</a>.
-<img src="mainpage.jpg" alt="title"></p>
+<img src="metal_music_project/mainpage.jpg" alt="title"></p>
 
 </div>
 </div>
@@ -11904,7 +11907,7 @@ I opted for <b>Wikipedia</b> since most of their population information was base
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='A'></a></p>
 <h2 id="Scrap-All-Countries">Scrap All Countries<a class="anchor-link" href="#Scrap-All-Countries">&#182;</a></h2><hr>
-<p><img src="countrypage.jpg" alt="title"></p>
+<p><img src="metal_music_project/countrypage.jpg" alt="title"></p>
 
 </div>
 </div>
@@ -12415,7 +12418,7 @@ If the request was successful and a connection was created, the response should 
   <li>If the country has more than 500 bands total, they are displayed by page number in batches of 500.</li>
   <li>If you try to scrap the same website a lot, most websites can detect it, and thus disconnect your HTTP connection.</li>
 </ol>
-<img src="inspectelement.jpg" alt="title"></p>
+<img src="metal_music_project/inspectelement.jpg" alt="title"></p>
 <h4 id="Sources-Used:">Sources Used:<a class="anchor-link" href="#Sources-Used:">&#182;</a></h4><p>1) Source for deriving solutions to #1 and #2: <a href="https://github.com/jonchar/ma-scraper">jonchar</a> on <b>GitHub</b> wrote his own <a href="https://github.com/jonchar/ma-scraper/blob/master/MA_band_scraper.py">scraper</a> for the <b>Encyclopedia Metallum</b>.</p>
 <p>2) Solution to number #3 was from this <a href="https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit">Stack Overflow post</a> and links to HTTP headers are <a href="http://www.useragentstring.com/pages/useragentstring.php">here</a>.</p>
 <h4 id="Solution-to-Problem-#1:-AJAX-Call-With-HTTP-Requests">Solution to Problem #1: AJAX Call With HTTP Requests<a class="anchor-link" href="#Solution-to-Problem-#1:-AJAX-Call-With-HTTP-Requests">&#182;</a></h4><p>You can see the <code><b>JavaScript</b></code> command to the <b>AJAX Databse</b>  (this is where all their data on bands is stored). To specify which country you want to see, you simply put in the country's ID number, which we have extracted earlier.</p>
@@ -13974,7 +13977,7 @@ Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.6/s
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id="C"></a></p>
 <h2 id="Genre-Analysis">Genre Analysis<a class="anchor-link" href="#Genre-Analysis">&#182;</a></h2><hr>
-<p><img src="genregroups.jpg" alt="title"></p>
+<p><img src="metal_music_project/genregroups.jpg" alt="title"></p>
 <h3 id="Answers-Question-#1:">Answers Question #1:<a class="anchor-link" href="#Answers-Question-#1:">&#182;</a></h3><ul style="list-style-type:none">
   <li><b>Which genre type seems to dominate the metal playing field?</b>
       <ul type="list-style-type:square">
@@ -40080,7 +40083,7 @@ IiIiIiKiMvD/F1lQEaZmPZgAAAAASUVORK5CYII=
 <a id="Q1B"></a></p>
 <h4 id="[ANSWER-TO-Q1B]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-every-country?">[ANSWER TO Q1B]: Which genre type seems to dominate the metal playing field in every country?<a class="anchor-link" href="#[ANSWER-TO-Q1B]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-every-country?">&#182;</a></h4><p>The answer is actually all of our 17 graphs!
 Let's look at one as an example:
-<img src="blackmetal.png" alt="title">
+<img src="metal_music_project/blackmetal.png" alt="title">
 If the bars for that country is high, then this type of genre is a very popular genre for this specific country.</p>
 <p><b>*You can double click on the graphs to enlarge them.</b></p>
 
