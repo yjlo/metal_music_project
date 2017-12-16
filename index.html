@@ -11780,11 +11780,11 @@ div#notebook {
 <hr>
 <h3 id="INTERACTIVE-MENU:-\m/--(---_----)--\m/">INTERACTIVE MENU: \m/  (  -_-   )  \m/<a class="anchor-link" href="#INTERACTIVE-MENU:-\m/--(---_----)--\m/">&#182;</a></h3><ul style="list-style-type:none">
     <li><Big><b><a href="#Intro">Introduction</a></b></Big></li>
-    <li><Big><b>[Part I: Web Scrapping](#Part I)</b></Big></li>
-    <li><Big><b>[Part II: Data Analysis & Visualization](#Part II)</b></Big></li>
-    <li><Big><b>[Goal](#Goal)</b></Big></li>
-    <li><Big><b>[Conclusion](#Con)</b></Big></li>
-    <li><Big><b>[Sources](#Sour)</b></Big></li>
+    <li><Big><b><a href="#Goal">Goal</a></b></Big></li>
+    <li><Big><b><a href="#Part I">Part I: Web Scrapping</a></b></Big></li>
+    <li><Big><b><a href="#Part II">Part II: Data Analysis & Visualization</a></b></Big></li>
+    <li><Big><b><a href="#Con">Conclusion</a></b></Big></li>
+    <li><Big><b><a href="#Sour">Sources</a></b></Big></li>
 </ul>
 </div>
 </div>
@@ -11847,7 +11847,7 @@ small bands can put themselves into the databse. Instead of using the kaggle dat
 archives myself since I felt that 5000 bands was lacking in terms of analysis for the entire world. For population data, 
 I opted for <b>Wikipedia</b> since most of their population information was based on a real time 
 <a href="http://worldpopulationclock.info">world population clock</a>.
-<img src="metal_music_project/mainpage.jpg" alt="title"></p>
+<img src='mainpage.jpg'></p>
 
 </div>
 </div>
@@ -11856,21 +11856,24 @@ I opted for <b>Wikipedia</b> since most of their population information was base
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Goal"></a></p>
+<p><a name="Goal">
+  <div id="Goal">
+  </div>
+</a></p>
 <h3 id="Goal:-Analysis-With-Extensive-Visualization-(Graphs-&amp;-Interactive-World-Map)">Goal: Analysis With Extensive Visualization (Graphs &amp; Interactive World Map)<a class="anchor-link" href="#Goal:-Analysis-With-Extensive-Visualization-(Graphs-&amp;-Interactive-World-Map)">&#182;</a></h3><hr>
 <h5 id="QUESTIONS:">QUESTIONS:<a class="anchor-link" href="#QUESTIONS:">&#182;</a></h5><ol type="1">
   <li><b>Which genre type seems to dominate the metal playing field?</b>
       <ul type="list-style-type:square">
-          <li>[For the metal genre in general](#Q1A)</li>
-          <li>[For each country](#Q1B)</li>
-          <li>[Are most genres mixed or pure?](#Q1C)</li>
+          <li><a href="#Q1A">For the metal genre in general</a></li>
+          <li><a href="#Q1B">For each country</a></li>
+          <li><a href="#Q1C">Are most genres mixed or pure?</a></li>
       </ul></li>
       &nbsp;
   <li><b>Which country is the most metal?</b>
       <ul type="list-style-type:square">
-          <li>[Most metal bands in proportion to population](#Q2AC)</li>
-          <li>[Most still active metal bands in proportion to population](#Q2AC)</li>
-          <li>[Most split-up metal bands in proportion to population](#Q2AC)</li>
+          <li><a href="#Q2AC">Most metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most still active metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most split-up metal bands in proportion to population</a></li>
       </ul></li>
 </ol>
 </div>
@@ -11880,22 +11883,25 @@ I opted for <b>Wikipedia</b> since most of their population information was base
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Part I"></a></p>
+<p><a name="Part I">
+  <div id="Part I">
+  </div>
+</a></p>
 <h1 id="PART-I:-Web-Scrapping">PART I: Web Scrapping<a class="anchor-link" href="#PART-I:-Web-Scrapping">&#182;</a></h1><hr>
 <ul style="list-style-type:none">
   <li><Big><b>[Scrape All Countries](#A)</b></Big></li>
       <ul style="list-style-type:disc">
-          <li><b>[HTTP Request](#A1)</b></li>
-          <li><b>[BeautifulSoup](#A2)</b></li>
-          <li><b>[Query All Countries With HTTP Request](#A3)</b></li>
-          <li><b>[Execute Query Code &amp; Write To TSV](#A4)</b></li>
-          <li><b>[Load In Our TSV](#A5)</b></li>
+          <li><b><a href="#A1">HTTP Request</a></b></li>
+          <li><b><a href="#A2">BeautifulSoup</a></b></li>
+          <li><b><a href="#A3">Query All Countries With HTTP Request</a></b></li>
+          <li><b><a href="#A4">Execute Query Code &amp; Write To TSV</a></b></li>
+          <li><b><a href="#A5">Load In Our TSV</a></b></li>
       </ul>
       &nbsp;
   <li><Big><b>[Scrape Population Data](#B)</b></Big></li>
       <ul style="list-style-type:disc">
-          <li><b>[Wikipedia HTML](#B1)</b></li>
-          <li><b>[Load In Population CSV](#B2)</b></li>
+          <li><b><a href="#B1">Wikipedia HTML</a></b></li>
+          <li><b><a href="#B2">Load In Population CSV</a></b></li>
       </ul>
 </ul>
 </div>
@@ -11905,9 +11911,12 @@ I opted for <b>Wikipedia</b> since most of their population information was base
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A'></a></p>
+<p><a name="A">
+  <div id="A">
+  </div>
+</a></p>
 <h2 id="Scrap-All-Countries">Scrap All Countries<a class="anchor-link" href="#Scrap-All-Countries">&#182;</a></h2><hr>
-<p><img src="metal_music_project/countrypage.jpg" alt="title"></p>
+<p><img src='countrypage.jpg'></p>
 
 </div>
 </div>
@@ -11940,7 +11949,10 @@ I opted for <b>Wikipedia</b> since most of their population information was base
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A1'></a></p>
+<p><a name="A1">
+  <div id="A1">
+  </div>
+</a></p>
 <h3 id="HTTP-Request">HTTP Request<a class="anchor-link" href="#HTTP-Request">&#182;</a></h3><p>To scrap the countries page of <b>Encyclopedia Metallum</b>, we need to make a HTTP request to the URL.&#13;&#10;
 If the request was successful and a connection was created, the response should be:</p>
 <div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span>
@@ -11986,7 +11998,10 @@ If the request was successful and a connection was created, the response should 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A2'></a></p>
+<p><a name="A2">
+  <div id="A2">
+  </div>
+</a></p>
 <h3 id="BeautifulSoup">BeautifulSoup<a class="anchor-link" href="#BeautifulSoup">&#182;</a></h3><p>To convert the request response into usable HTML tags easily, <code><b>BeautifulSoup</b></code> is the way to go. Make sure you have these imported:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
 <span class="kn">import</span> <span class="nn">html5lib</span>
@@ -12410,7 +12425,10 @@ If the request was successful and a connection was created, the response should 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A3'></a></p>
+<p><a name="A3">
+  <div id="A3">
+  </div>
+</a></p>
 <h3 id="Query-All-Countries-With-HTTP-Request">Query All Countries With HTTP Request<a class="anchor-link" href="#Query-All-Countries-With-HTTP-Request">&#182;</a></h3><p>This part is somewhat complex because of the way the <b>Encyclopedia Metallum</b> is made. When you click on a country, you will see all the bands for that specific country.
 <img src="countrypages.jpg" alt="title"></p>
 <h4 id="Here-are-the-3-main-difficulties-with-scraping-this-part-of-the-database:">Here are the 3 main difficulties with scraping this part of the database:<a class="anchor-link" href="#Here-are-the-3-main-difficulties-with-scraping-this-part-of-the-database:">&#182;</a></h4><p><ol type="1">
@@ -12418,7 +12436,7 @@ If the request was successful and a connection was created, the response should 
   <li>If the country has more than 500 bands total, they are displayed by page number in batches of 500.</li>
   <li>If you try to scrap the same website a lot, most websites can detect it, and thus disconnect your HTTP connection.</li>
 </ol>
-<img src="metal_music_project/inspectelement.jpg" alt="title"></p>
+<img src='inspectelement.jpg'></p>
 <h4 id="Sources-Used:">Sources Used:<a class="anchor-link" href="#Sources-Used:">&#182;</a></h4><p>1) Source for deriving solutions to #1 and #2: <a href="https://github.com/jonchar/ma-scraper">jonchar</a> on <b>GitHub</b> wrote his own <a href="https://github.com/jonchar/ma-scraper/blob/master/MA_band_scraper.py">scraper</a> for the <b>Encyclopedia Metallum</b>.</p>
 <p>2) Solution to number #3 was from this <a href="https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit">Stack Overflow post</a> and links to HTTP headers are <a href="http://www.useragentstring.com/pages/useragentstring.php">here</a>.</p>
 <h4 id="Solution-to-Problem-#1:-AJAX-Call-With-HTTP-Requests">Solution to Problem #1: AJAX Call With HTTP Requests<a class="anchor-link" href="#Solution-to-Problem-#1:-AJAX-Call-With-HTTP-Requests">&#182;</a></h4><p>You can see the <code><b>JavaScript</b></code> command to the <b>AJAX Databse</b>  (this is where all their data on bands is stored). To specify which country you want to see, you simply put in the country's ID number, which we have extracted earlier.</p>
@@ -12550,7 +12568,10 @@ If the request was successful and a connection was created, the response should 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A4'></a></p>
+<p><a name="A4">
+  <div id="A4">
+  </div>
+</a></p>
 <h3 id="Execute-Query-Code-&amp;-Write-To-TSV">Execute Query Code &amp; Write To TSV<a class="anchor-link" href="#Execute-Query-Code-&amp;-Write-To-TSV">&#182;</a></h3><p>This part of the code executes all the helper functions above to write the information into a <b>Tabs Separated File (TSV)</b>. Because the genres have commas in the string, I decided to use TSV to prevent problems with reading the file later on. To do this, you need to import the csv library:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 </pre></div>
@@ -12761,7 +12782,10 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='A5'></a></p>
+<p><a name="A5">
+  <div id="A5">
+  </div>
+</a></p>
 <h3 id="Load-In-Our-TSV">Load In Our TSV<a class="anchor-link" href="#Load-In-Our-TSV">&#182;</a></h3><p>After all that hard work, let's reap the reward. Using <code><b>Pandas</b></code>, we can easily read in a CSV,TSV, or any value separated file as a <code><b>DataFrame</b></code>. Make sure you've imported the library:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 </pre></div>
@@ -13499,7 +13523,10 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='B'></a></p>
+<p><a name="B">
+  <div id="B">
+  </div>
+</a></p>
 <h2 id="Scrap-Population-Data">Scrap Population Data<a class="anchor-link" href="#Scrap-Population-Data">&#182;</a></h2><hr>
 <p>I'm sorry we're still scrapping data. This is it, I promise, then we get to the fun stuff. Here we extract population data from <b>Wikipedia</b>. Just like the part where we scrapped the country's page, we use regexes and <code><b>BeautifulSoup</b></code>.</p>
 
@@ -13510,7 +13537,10 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="B1"></a></p>
+<p><a name="B1">
+  <div id="B1">
+  </div>
+</a></p>
 <h3 id="Wikipedia-HTML">Wikipedia HTML<a class="anchor-link" href="#Wikipedia-HTML">&#182;</a></h3><p>Here's one row in the population data table for China:</p>
 <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
@@ -13600,7 +13630,10 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="B2"></a></p>
+<p><a name="B2">
+  <div id="B2">
+  </div>
+</a></p>
 <h3 id="Load-In-Population-CSV">Load In Population CSV<a class="anchor-link" href="#Load-In-Population-CSV">&#182;</a></h3><p>It's a thing of beauty, congratulations! You are now well versed in web scrapping with Python.</p>
 
 </div>
@@ -13907,22 +13940,25 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Part II"></a></p>
+<p><a name="Part II">
+  <div id="Part II">
+  </div>
+</a></p>
 <h1 id="Part-II:-Data-Analysis-&amp;-Visualization">Part II: Data Analysis &amp; Visualization<a class="anchor-link" href="#Part-II:-Data-Analysis-&amp;-Visualization">&#182;</a></h1><hr>
 <ul style="list-style-type:none">
-  <li><Big><b>[Genre Analysis](#C)</b></Big></li>
+  <li><Big><b><a href="#C">Genre Analysis</a></b></Big></li>
       <ul style="list-style-type:disc">
-          <li><b>[Tranform DataFrame for Genre Analysis](#C1)</b></li>
-          <li><b>[Overall Genre Counts](#C2)</b></li>
-          <li><b>[Genre Count Bar Graph](#C3)</b></li>
-          <li><b>[Country Genre Counts](#C4)</b></li>
-          <li><b>[Genre by Country Plots](#C5)</b></li>
+          <li><b><a href="#C1">Tranform DataFrame for Genre Analysis</a></b></li>
+          <li><b><a href="#C2">Overall Genre Counts</a></b></li>
+          <li><b><a href="#C3">Genre Count Bar Graph</a></b></li>
+          <li><b><a href="#C4">Country Genre Counts</a></b></li>
+          <li><b><a href="#C5">Genre by Country Plots</a></b></li>
       </ul>
       &nbsp;
-  <li><Big><b>[Top Metal Countries](#D)</b></Big></li>
+  <li><Big><b><a href="#D">Top Metal Countries</a></b></Big></li>
       <ul style="list-style-type:disc">
-          <li><b>[Calculating Per Capita](#D1)</b></li>
-          <li><b>[Metal Choropleth Map](#D2)</b></li>
+          <li><b><a href="#D1">Calculating Per Capita</a></b></li>
+          <li><b><a href="#D2">Metal Choropleth Map</a></b></li>
       </ul>
 </ul>
 </div>
@@ -13930,7 +13966,7 @@ Vietnam (VN): SUCCESS [39]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install folium
@@ -13953,16 +13989,25 @@ Vietnam (VN): SUCCESS [39]
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: folium in /opt/conda/lib/python3.6/site-packages
-Requirement already satisfied: six in /opt/conda/lib/python3.6/site-packages (from folium)
-Requirement already satisfied: requests in /opt/conda/lib/python3.6/site-packages (from folium)
-Requirement already satisfied: branca in /opt/conda/lib/python3.6/site-packages (from folium)
+<pre>Collecting folium
+  Downloading folium-0.5.0.tar.gz (79kB)
+    100% |████████████████████████████████| 81kB 1.1MB/s ta 0:00:01    64% |████████████████████▊           | 51kB 1.3MB/s eta 0:00:01
+Collecting branca (from folium)
+  Downloading branca-0.2.0-py3-none-any.whl
 Requirement already satisfied: jinja2 in /opt/conda/lib/python3.6/site-packages (from folium)
+Requirement already satisfied: requests in /opt/conda/lib/python3.6/site-packages (from folium)
+Requirement already satisfied: six in /opt/conda/lib/python3.6/site-packages (from folium)
+Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.6/site-packages (from jinja2-&gt;folium)
 Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/conda/lib/python3.6/site-packages (from requests-&gt;folium)
 Requirement already satisfied: idna&lt;2.7,&gt;=2.5 in /opt/conda/lib/python3.6/site-packages (from requests-&gt;folium)
 Requirement already satisfied: urllib3&lt;1.23,&gt;=1.21.1 in /opt/conda/lib/python3.6/site-packages (from requests-&gt;folium)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.6/site-packages (from requests-&gt;folium)
-Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.6/site-packages (from jinja2-&gt;folium)
+Building wheels for collected packages: folium
+  Running setup.py bdist_wheel for folium ... done
+  Stored in directory: /home/jovyan/.cache/pip/wheels/04/d0/a0/b2b8356443364ae79743fce0b9b6a5b045f7560742129fde22
+Successfully built folium
+Installing collected packages: branca, folium
+Successfully installed branca-0.2.0 folium-0.5.0
 </pre>
 </div>
 </div>
@@ -13975,17 +14020,20 @@ Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.6/s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="C"></a></p>
+<p><a name="C">
+  <div id="C">
+  </div>
+</a></p>
 <h2 id="Genre-Analysis">Genre Analysis<a class="anchor-link" href="#Genre-Analysis">&#182;</a></h2><hr>
-<p><img src="metal_music_project/genregroups.jpg" alt="title"></p>
-<h3 id="Answers-Question-#1:">Answers Question #1:<a class="anchor-link" href="#Answers-Question-#1:">&#182;</a></h3><ul style="list-style-type:none">
+<p><img src='genregroups.jpg'></p>
+<h3 id="Answers-Question-#1:">Answers Question #1:<a class="anchor-link" href="#Answers-Question-#1:">&#182;</a></h3><p><ul style="list-style-type:none">
   <li><b>Which genre type seems to dominate the metal playing field?</b>
-      <ul type="list-style-type:square">
-          <li>[For the metal genre in general](#Q1A)</li>
-          <li>[For each country](#Q1B)</li>
-          <li>[Are most genres mixed or pure?](#Q1C)</li>
-      </ul></li>
-</ul>
+       <ul type="list-style-type:square">
+          <li><a href="#Q1A">For the metal genre in general</a></li>
+          <li><a href="#Q1B">For each country</a></li>
+          <li><a href="#Q1C">Are most genres mixed or pure?</a></li>
+      </ul>&lt;/li&gt;</p>
+
 </div>
 </div>
 </div>
@@ -13993,7 +14041,10 @@ Requirement already satisfied: MarkupSafe&gt;=0.23 in /opt/conda/lib/python3.6/s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="C1"></a></p>
+<p><a name="C1">
+  <div id="C1">
+  </div>
+</a></p>
 <h3 id="Tranform-DataFrame-for-Genre-Analysis">Tranform DataFrame for Genre Analysis<a class="anchor-link" href="#Tranform-DataFrame-for-Genre-Analysis">&#182;</a></h3><p>Our metal bands data has a genre column, but right now it isn't in a form where we can do any genre specific analysis. We need to determine the big major metal genre's and show whether the band belongs to any of these major groups. <b>Encyclopedia Metallum</b> has us covered with the list above. Metal genres usually have an umbrella term and anything attached to them are subgenres, like Melodic Death Metal for example. To do this task, were going to use regexes again and put the major umbrella terms as the keywords. Unlike regular regex matching, you want to use:</p>
 <div class="highlight"><pre><span></span><span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">genre_str</span><span class="p">)</span>
 <span class="n">regex</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">band_genre</span><span class="p">)</span>
@@ -15577,7 +15628,10 @@ We also want to keep track of number of genre types each band is classified as. 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="C2"></a></p>
+<p><a name="C2">
+  <div id="C2">
+  </div>
+</a></p>
 <h3 id="Overall-Genre-Counts">Overall Genre Counts<a class="anchor-link" href="#Overall-Genre-Counts">&#182;</a></h3><p>After the <code><b>DataFrame</b></code> transformation, we can easily do band counts for each genre. Use <code><b>.value_counts()</b></code> on the column you want to tally instead of going through the entire <code><b>DataFrame</b></code> with a for loop. The <code><b>DataFrame</b></code> is a nice presentation of the data, especially if you sort using:</p>
 <div class="highlight"><pre><span></span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">column_name</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
 </pre></div>
@@ -15713,7 +15767,10 @@ We also want to keep track of number of genre types each band is classified as. 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="C3"></a></p>
+<p><a name="C3">
+  <div id="C3">
+  </div>
+</a></p>
 <h3 id="Genre-Count-Bar-Graph">Genre Count Bar Graph<a class="anchor-link" href="#Genre-Count-Bar-Graph">&#182;</a></h3><p>For beautiful and easy to use plotting, import <a href="https://matplotlib.org"><b>matplotlib</b></a> and <a href="https://seaborn.pydata.org"><b>seaborn</b></a>. You can use <code><b>matplotlib</b></code> by itself, but <code><b>seaborn</b></code> is much more flexible and makes fine tuning how a graph looks much easier.</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
@@ -15722,21 +15779,24 @@ We also want to keep track of number of genre types each band is classified as. 
 <p><ul style="list-style-type:none">
     <li><big><code><b>matplotlib</b></code></big>
         <ol type="1">
-          <li>[Solid Color Selections](https://xkcd.com/color/rgb/)</li>
-          <li>[Colormaps](https://matplotlib.org/users/colormaps.html)</li>
-          <li>[Colormap Example Code](https://matplotlib.org/examples/color/colormaps_reference.html)</li>
+          <li><a href="https://xkcd.com/color/rgb/">Solid Color Selections</a></li>
+          <li><a href="https://matplotlib.org/users/colormaps.html">Colormaps</a></li>
+          <li><a href="https://matplotlib.org/examples/color/colormaps_reference.html">Colormap Example Code</a></li>
         </ol>
     </li>
     &nbsp;
     <li><big><code><b>seaborn</b></code></big>
         <ol type="1">
-          <li>[Color Palettes](https://seaborn.pydata.org/tutorial/color_palettes.html)</li>
-          <li>[Palette Example Code](https://chrisalbon.com/python/seaborn_color_palettes.html)</li>
+          <li><a href="https://seaborn.pydata.org/tutorial/color_palettes.html">Color Palettes</a></li>
+          <li><a href="https://chrisalbon.com/python/seaborn_color_palettes.htmll">Palette Example Code</a></li>
         </ol>
     </li>
 </ul>
 Here we are plotting the <code><b>DataFrame</b></code> we created above and we can answer one of our analysis questions.
-<a id="Q1A"></a></p>
+<a name="Q1A">
+  <div id="Q1A">
+  </div>
+</a></p>
 <h4 id="[ANSWER-TO-Q1A]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-general?">[ANSWER TO Q1A]: Which genre type seems to dominate the metal playing field in general?<a class="anchor-link" href="#[ANSWER-TO-Q1A]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-general?">&#182;</a></h4><p><b>Black</b>, <b>Death</b>, <b>Trash</b>, <b>Heavy</b>, and <b>Doom/Stoner/Sludge</b> are the top 5 genres types in metal music. Which is not surprising if you're familiar with metal history, lower count genres tend to be newer genres where as the top 5 are ancestors to many of the other genre types and subgenres. It's pretty evident if you go look at the <a href="https://mapofmetal.com">Map of Metal</a> mentioned earlier.</p>
 
 </div>
@@ -16325,7 +16385,10 @@ inpL/B/4m0WdAZzuXAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="C4"></a></p>
+<p><a name="C4">
+  <div id="C4">
+  </div>
+</a></p>
 <h3 id="Country-Genre-Counts">Country Genre Counts<a class="anchor-link" href="#Country-Genre-Counts">&#182;</a></h3><p>So we know the top overall metals genres, but let's look at what genres dominate each country. Instead of using <code><b>.value_counts()</b></code> let's use <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.pivot_table.html"><b>pivot_table</b></a> from <code><b>Pandas</b></code>. The <code><b>pivot_table</b></code> allows us to tally the bands with a genre type in a specific country.</p>
 
 </div>
@@ -16526,7 +16589,10 @@ inpL/B/4m0WdAZzuXAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;a id ="C5"&gt;&lt;/a&gt;</p>
+<p><a name="C5">
+  <div id="C5">
+  </div>
+</a></p>
 <h1 id="Genre-by-Country-Plots">Genre by Country Plots<a class="anchor-link" href="#Genre-by-Country-Plots">&#182;</a></h1><p>Let's plot the <code><b>DataFrame</b></code> from above to see the results. Since I'll be plotting 17 genre plots, let's make it a function so that we don't have to repeat code 17 times.</p>
 
 </div>
@@ -40080,10 +40146,13 @@ IiIiIiKiMvD/F1lQEaZmPZgAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's regraph you can see for each country what genres are really prevalent in each country.
-<a id="Q1B"></a></p>
+<a name="Q1B">
+  <div id="Q1B">
+  </div>
+</a></p>
 <h4 id="[ANSWER-TO-Q1B]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-every-country?">[ANSWER TO Q1B]: Which genre type seems to dominate the metal playing field in every country?<a class="anchor-link" href="#[ANSWER-TO-Q1B]:-Which-genre-type-seems-to-dominate-the-metal-playing-field-in-every-country?">&#182;</a></h4><p>The answer is actually all of our 17 graphs!
 Let's look at one as an example:
-<img src="metal_music_project/blackmetal.png" alt="title">
+<img src='blackmetal.png'>
 If the bars for that country is high, then this type of genre is a very popular genre for this specific country.</p>
 <p><b>*You can double click on the graphs to enlarge them.</b></p>
 
@@ -63260,7 +63329,10 @@ iIiIiIiIiIj0gAV3IiIiIiIiIiIiIiI9YMGdiIiIiIiIiIiIiEgPWHAnIiIiIiIiIiIiItKD/wMd
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Q1B"></a></p>
+<p><a name="Q1C">
+  <div id="Q1C">
+  </div>
+</a></p>
 <h4 id="[ANSWER-TO-Q1C]:-Are-most-genres-mixed-or-pure?">[ANSWER TO Q1C]: Are most genres mixed or pure?<a class="anchor-link" href="#[ANSWER-TO-Q1C]:-Are-most-genres-mixed-or-pure?">&#182;</a></h4><p>Looking at the graph we made more than <b>70,000</b> bands are pure one type of genre while around <b>40,000</b> bands are mix of 2 different genre types. Around 61% are pure and 34% are mix of 2, and around 40% are a mix of 2 or more genre types. I'm actually surprised since most bands are usually listed with so many genre tags.</p>
 
 </div>
@@ -63614,16 +63686,20 @@ LyIiYhIKfREREZP4fwWo/Ax068ThAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="D"></a></p>
+<p><a name="D">
+  <div id="D">
+  </div>
+</a></p>
 <h2 id="Top-Metal-Countries">Top Metal Countries<a class="anchor-link" href="#Top-Metal-Countries">&#182;</a></h2><hr>
-<h3 id="Answers-Question-#2:">Answers Question #2:<a class="anchor-link" href="#Answers-Question-#2:">&#182;</a></h3><ul style="list-style-type:none">
-  <li><b>[Which country is the most metal?](#Q2AC)</b>
+<h3 id="Answers-Question-#2:">Answers Question #2:<a class="anchor-link" href="#Answers-Question-#2:">&#182;</a></h3><p><ul style="list-style-type:none">
+  <li><b>Which country is the most metal?</b>
       <ul type="list-style-type:square">
-          <li>Most metal bands in proportion to population</li>
-          <li>Most still active metal bands in proportion to population</li>
-          <li>Most split-up metal bands in proportion to population</li>
-      </ul></li>
-</ul><p>Let's apply all of the python techiques to create a <code><b>DataFrame</b></code> for the status types for every country.</p>
+          <li><a href="#Q2AC">Most metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most still active metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most split-up metal bands in proportion to population</a></li>
+      </ul>&lt;/li&gt;
+&lt;/ul&gt;
+Let's apply all of the python techiques to create a <code><b>DataFrame</b></code> for the status types for every country.</p>
 
 </div>
 </div>
@@ -63886,7 +63962,10 @@ LyIiYhIKfREREZP4fwWo/Ax068ThAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="D1"></a></p>
+<p><a name="D1">
+  <div id="D1">
+  </div>
+</a></p>
 <h3 id="Calculating-Per-Capita">Calculating Per Capita<a class="anchor-link" href="#Calculating-Per-Capita">&#182;</a></h3><p>I wanted to calculate 3 different per capitas, one for overall, one for currently active bands, and one for bands that have split-up. This will tell us which countries have the most metal music activity in proportion to population.</p>
 <p><b>The equation for calculating Per Capita (# of bands per person):</b></p>
 <p>$\text{Per Capita} = \dfrac{\text{band count}}{\text{population}} \times \text{(scalar)}$</p>
@@ -64030,7 +64109,10 @@ LyIiYhIKfREREZP4fwWo/Ax068ThAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="D2"></a></p>
+<p><a name="D2">
+  <div id="D2">
+  </div>
+</a></p>
 <h3 id="Metal-Choropleth-Map">Metal Choropleth Map<a class="anchor-link" href="#Metal-Choropleth-Map">&#182;</a></h3><p>Here, we're going to use <a href="https://folium.readthedocs.io/en/latest/"><b>folium</b></a> make an <b>interactive choropleth map</b>, it'll let us see which country is the most metal better than a bar graph. I was inspired by this <a href="http://www.metalinjection.net/around-the-interwebs/which-country-has-the-most-metal-bands-per-capita">Metal Injection Blog Post</a>.</p>
 <div class="highlight"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">folium</span>
 <span class="kn">import</span> <span class="nn">folium</span>
@@ -64921,15 +65003,18 @@ LyIiYhIKfREREZP4fwWo/Ax068ThAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code><b>folium</b></code> has a built in <code><b>choropleth</b></code> function. Because I have to graph 3 of them, I made a function and I had them all added in as layers. Because the map is so tasking on the computer, saving it as an html file is a good option if your computer can't handle the large amount of graphics.</p>
-<p>View the full map <a href="http://192.168.99.100:8888/view/notebooks/finalproject/metalband_choropleth_map.html">here</a>
-With the map layers, we answer our 2nd question.
-<a id="Q2AC"></a></p>
+<p>View the full map <a href="metalband_choropleth_map.html">here</a></p>
+<p>With the map layers, we answer our 2nd question.
+<a name="Q2AC">
+  <div id="Q2AC">
+  </div>
+</a></p>
 <h4 id="[ANSWER-TO-Q2A-C]:-Which-country-is-the-most-metal?">[ANSWER TO Q2A-C]: Which country is the most metal?<a class="anchor-link" href="#[ANSWER-TO-Q2A-C]:-Which-country-is-the-most-metal?">&#182;</a></h4><p><b>Finland</b> and those Scandinavians! Finland is the top for all 3 maps and that shows that metal music activity in Finland is extremely high even though they are not the one of the most population dense countries in the world.</p>
 <p>Here are some resources for choropleth maps:</p>
 <ol type="1">
-  <li>[Color Brewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)</li>
-  <li>[Quickstart Example Code](http://folium.readthedocs.io/en/latest/quickstart.html)</li>
-  <li>[Folium Documentation](http://webcache.googleusercontent.com/search?q=cache:vFIv6ObzPG4J:python-visualization.github.io/folium/docs-master/modules.html+&cd=4&hl=en&ct=clnk&gl=us)</li>
+    <li><a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3">Color Brewer</a></li>
+    <li><a href="http://folium.readthedocs.io/en/latest/quickstart.html">Quickstart Example Code</a></li>
+    <li><a href="http://webcache.googleusercontent.com/search?q=cache:vFIv6ObzPG4J:python-visualization.github.io/folium/docs-master/modules.html+&cd=4&hl=en&ct=clnk&gl=us">Folium Documentation</a></li>
 </ol>
 </div>
 </div>
@@ -64969,40 +65054,47 @@ With the map layers, we answer our 2nd question.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id="Con"></a></p>
+<p><a name="Con">
+  <div id="Con">
+  </div>
+</a></p>
 <h1 id="Conculsion-&amp;-Major-Souces">Conculsion &amp; Major Souces<a class="anchor-link" href="#Conculsion-&amp;-Major-Souces">&#182;</a></h1><hr>
 <p>If you have stuck with me till the end, then congratulations! We did some incredible things in Python 3 and answered these metal music questions:</p>
 <ol type="1">
   <li><b>Which genre type seems to dominate the metal playing field?</b>
       <ul type="list-style-type:square">
-          <li>[For the metal genre in general](#Q1A)</li>
-          <li>[For each country](#Q1B)</li>
+          <li><a href="#Q1A">For the metal genre in general</a></li>
+          <li><a href="#Q1B">For each country</a></li>
+          <li><a href="#Q1C">Are most genres mixed or pure?</a></li>
       </ul></li>
       &nbsp;
   <li><b>Which country is the most metal?</b>
       <ul type="list-style-type:square">
-          <li>[Most metal bands in proportion to population](#Q2AC)</li>
-          <li>[Most still active metal bands in proportion to population](#Q2AC)</li>
-          <li>[Most split-up metal bands in proportion to population](#Q2AC)</li>
+          <li><a href="#Q2AC">Most metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most still active metal bands in proportion to population</a></li>
+          <li><a href="#Q2AC">Most split-up metal bands in proportion to population</a></li>
       </ul></li>
 </ol><p>In comparison with the <a href="https://www.kaggle.com/mrpantherson/metal-by-nation-and-genre/notebook">kaggle notebook</a>, we had pretty similar results even though the data set here is 20 times larger. Our most metal country was Finland, but for the kaggle analysis it was the Faroes Islands, which is actually an island off of the Scandinavian paninsulas. A lot of the genre analysis was similar as well.</p>
 <p>Thanks for reading and following along!</p>
-<p><a id="Sour"></a></p>
+<p><a name="Sour">
+  <div id="Sour">
+  </div>
+</a></p>
 <h2 id="Sources">Sources<a class="anchor-link" href="#Sources">&#182;</a></h2><ul style="list-style-type:disc">
     <li><Big><b>Data Sources</b></Big>
         <ul style="list-style-type:disc">
-          <li>[Encyclopedia Metallum](http://metal-archives.com)</li>
-          <li>[Wikipedia Population Data](https://github.com/datasets/geo-countries/tree/master/data)</li>
-          <li>[World GEOJSON](https://github.com/datasets/geo-countries/tree/master/data)</li>
+            <li><a href="http://metal-archives.com">Encyclopedia Metallum</a></li>
+            <li><a href="https://github.com/datasets/geo-countries/tree/master/data">Wikipedia Population Data</a></li>
+            <li><a href="https://github.com/datasets/geo-countries/tree/master/data">World GEOJSON</a></li>
         </ul>
     </li>
     &nbsp;
     <li><Big><b>Inpiration/Reference Sources</b></Big>
         <ul style="list-style-type:disc">
-          <li>[Kaggle's Metal by Nation and Genre](https://www.kaggle.com/mrpantherson/metal-by-nation)</li>
-          <li>[Kaggle Notebook](https://www.kaggle.com/mrpantherson/metal-by-nation-and-genre/notebook)</li>
-          <li>[Map of Metal](https://mapofmetal.com/)</li>
-          <li>[GitHub: jonchar's Metal Archives Scarper](https://github.com/jonchar/ma-scraper)</li>
+            <li><a href="https://www.kaggle.com/mrpantherson/metal-by-nation">Kaggle's Metal by Nation and Genre</a></li>
+            <li><a href="https://www.kaggle.com/mrpantherson/metal-by-nation-and-genre/notebook">Kaggle Notebook</a></li>
+            <li><a href="https://mapofmetal.com/">Map of Metal</a></li>
+            <li><a href="https://github.com/jonchar/ma-scraper">GitHub: jonchar's Metal Archives Scarper</a></li>
         </ul>
     </li>
 </ul>
